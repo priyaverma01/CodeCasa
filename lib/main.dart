@@ -1,20 +1,16 @@
 import 'package:flutter/material.dart';
-import '/screens/quiz_screen.dart';
+import 'package:stopwatch/pages/HomePage.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MyApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
-
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      themeMode: ThemeMode.dark,
-      theme: ThemeData.dark().copyWith(),
-      home: const QuizScreen(),
+      home: HomePage(),
     );
   }
 }
